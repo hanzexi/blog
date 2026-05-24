@@ -1,0 +1,86 @@
+# baseURL (local dev): http://192.168.18.102:3000/
+baseURL: https://hanzexi.github.io/blog/
+title: My Blog # 网站标题
+theme: PaperMod # 使用的主题名称
+
+# 代码高亮配置 (Chroma)
+markup:
+  highlight:
+    noClasses: false          # 使用 Chroma CSS 类（必须设置为 false）
+    style: github             # 语法高亮主题：github, monokai, solarized-dark, dracula
+    lineNos: true             # 显示行号
+    lineNumbersInTable: true  # 行号显示在独立表格列（更美观）
+    tabWidth: 4               # Tab 缩进宽度
+    guessSyntax: true         # 自动检测语言
+    codeFences: true          # 启用代码围栏
+
+# 文章排序配置
+# 可选值: date(日期,默认), weight(权重), title(标题), publishDate(发布日期), expirydate(过期日期)
+# 排序方向: desc(降序,默认), asc(升序)
+# 如需按权重排序，请在文章 Front Matter 中添加 weight: 数字（数字越小越靠前）
+params:
+  description: "我的博客" # 网站描述
+  defaultTheme: auto # 默认主题模式：auto（自动跟随系统）、light（浅色）、dark（深色）
+  ShowReadingTime: true # 显示阅读时间
+  ShowShareButtons: false # 显示分享按钮
+  ShowPostNavLinks: true # 显示文章导航链接（上一篇/下一篇）
+  ShowBreadCrumbs: true # 显示面包屑导航
+  ShowToc: true # 显示目录（Table of Contents）- 修改为 true
+  ShowCodeCopyButtons: true # 显示代码块复制按钮
+  # 隐藏第一篇文章的特殊样式（让所有文章显示一致）
+  disableSpecial1stPost: false # 设置为 true 可禁用第一篇文章的大号样式
+  
+  # Home-Info Mode 配置
+  # 在首页顶部显示个人信息区域
+  homeInfoParams:
+    Title: "欢迎来到我的博客"
+    Content: "记录技术成长，分享编程心得。这里有关于 Hugo、Docker、Python 等技术的学习笔记和实践经验。"
+  
+  # 社交图标配置（可选）
+  socialIcons:
+    - name: "github"
+      url: "https://github.com"
+    - name: "twitter"
+      url: "https://twitter.com"
+    - name: "linkedin"
+      url: "https://linkedin.com"
+  
+  # 网站运行时间配置
+  footer:
+    siteCreated: "2024-01-01" # 网站创建日期，用于计算运行时间
+
+languages:
+  zh-CN: # 语言配置：简体中文
+    weight: 1 # 语言权重，数字越小优先级越高，通常用于决定默认语言
+    title: "My Blog" # 该语言下的网站标题
+    languageName: "中文" # 语言名称显示
+    description: "我的技术博客" # 该语言下的网站描述
+
+menu:
+  main: # 主菜单配置
+    - identifier: home # 菜单项唯一标识符
+      name: "首页" # 菜单显示名称
+      url: / # 链接地址
+      weight: 10 # 排序权重，数值越小越靠前
+
+    - identifier: archives # 菜单项唯一标识符
+      name: "档案" # 菜单显示名称
+      url: /archives/ # 链接地址
+      weight: 15 # 排序权重
+
+    - identifier: search # 菜单项唯一标识符
+      name: "搜索" # 菜单显示名称
+      url: /search/ # 链接地址
+      weight: 20 # 排序权重
+
+outputs:
+  home: # 针对首页（Home Page）的输出格式配置
+    - HTML # 生成标准的 HTML 页面
+    - RSS # 生成 RSS 订阅文件
+    - JSON # 生成 JSON 数据文件（通常用于前端搜索功能或 API 调用）
+
+# 内容排序配置
+frontmatter:
+  date:
+    - :filename
+    - :default
