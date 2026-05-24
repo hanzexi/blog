@@ -47,7 +47,7 @@ params:
   
   # 网站运行时间配置
   footer:
-    siteCreated: "2024-01-01" # 网站创建日期，用于计算运行时间
+    siteCreated: "2026-05-24" # 网站创建日期，用于计算运行时间
 
 languages:
   zh-CN: # 语言配置：简体中文
