@@ -20,6 +20,12 @@ markup:
 # 如需按权重排序，请在文章 Front Matter 中添加 weight: 数字（数字越小越靠前）
 params:
   description: "我的博客" # 网站描述
+  
+  # Avatar / Logo 配置 (PaperMod)
+  avatar:
+    enabled: true
+    image: assets/icons/avatar.png
+  
   defaultTheme: auto # 默认主题模式：auto（自动跟随系统）、light（浅色）、dark（深色）
   ShowReadingTime: true # 显示阅读时间
   ShowShareButtons: false # 显示分享按钮
