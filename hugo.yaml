@@ -29,7 +29,7 @@ languages:
     params:
       avatar: # Avatar / Logo 配置 (PaperMod) - 必须放在对应语言的params下才能生效
         enabled: true
-        image: /assets/icons/avatar.png
+        image: assets/icons/avatar.png
       
       defaultTheme: auto # 默认主题模式：auto（自动跟随系统）、light（浅色）、dark（深色）
       ShowReadingTime: true # 显示阅读时间
