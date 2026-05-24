@@ -40,6 +40,7 @@ languages:
       ShowCodeCopyButtons: true # 显示代码块复制按钮
       
       homeInfoParams:
+        enabled: true # 必须启用才能显示头像和Home-Info区域
         Title: "欢迎来到我的博客"
         Content: "记录技术成长，分享编程心得。这里有关于 Hugo、Docker、Python 等技术的学习笔记和实践经验。"
       
